@@ -16,8 +16,8 @@ server <- function(input, output) {
     map <- leaflet() %>% 
   addProviderTiles("Stamen.Watercolor") %>% 
   addProviderTiles("OpenWeatherMap.Rain") %>% 
-  setView(lng = 113.9213,
-          lat = 0.7893,
+  setView(lat = 113.9213,
+          lng = 0.7893,
           zoom = 6)
  
 }
