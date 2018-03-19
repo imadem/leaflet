@@ -16,3 +16,4 @@ server <- function(input, output) {
     leaflet() %>% addTiles() %>% setView(42, 16, 4)
   })
 }
+shinyApp(ui, server)
