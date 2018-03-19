@@ -17,4 +17,4 @@ server <- function(input, output) {
   })
 }
 
-runApp(shinyApp(ui, server), launch.browser = TRUE)
+#runApp(shinyApp(ui, server), launch.browser = TRUE)
