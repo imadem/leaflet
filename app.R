@@ -14,8 +14,8 @@ ui <- dashboardPage(
 server <- function(input, output) {
    output$map <- renderLeaflet({
     leaflet() %>% addTiles() %>%
-  setView(lat = 113.9213,
-          lng = 0.7893,
+  setView(lng = 113.9213,
+          lat = 0.7893,
           zoom = 6)
  })
 }
