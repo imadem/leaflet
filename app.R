@@ -14,11 +14,9 @@ ui <- dashboardPage(
 server <- function(input, output) {
    output$map <- renderLeaflet({
     leaflet() %>% addTiles() %>%
-  #addProviderTiles("Stamen.Watercolor") %>% 
-  #addProviderTiles("OpenWeatherMap.Rain") %>% 
   setView(lat = 113.9213,
           lng = 0.7893,
           zoom = 6)
- 
-})
+ })
+}
 shinyApp(ui, server)
